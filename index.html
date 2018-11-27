@@ -1,0 +1,142 @@
+<html lang ="tr">
+	<html>
+		<head>
+			<meta charset ="utf-8">
+				<title>Mobil Arayüz Tasarım</title>
+				<meta name ="title" content="Mobil Arayüz Tasarım"/>
+				<meta name ="viewport" content="width=device-width,initial-scale=1"/>
+				<meta name ="description" content="Mobil Arayüz Tasarımı"/>
+					<style>
+						*{
+							margin:0; 
+							padding:0;
+							box-sizing:border-box;
+							}
+							
+							body{
+								background:white;
+								font-size:14px;
+								font-family:arial;
+								}
+								
+								.wrapper{
+									width:100%;
+									height:%100;
+									padding:10px;
+									background:white;
+									overflow:hidden;
+									}
+									
+								/* form style*/
+								#back-button{
+								  width:100%;
+								  padding:10px;
+								background:#FF3E4F;
+								border-radius:10px;
+								  color:white;
+								font-weight:bold;
+								border:none;
+								outline:0;
+								transition:all 350ms;
+								}
+								
+								#back-button:hover{
+								background:none;
+								color:#FF3E4F;
+								border:3px solid #FF3E4F;
+								transition:all 350ms;
+								}
+								
+							#inp{
+								width:100%;
+								padding:10px;
+								margin-top:10px;
+								border:none;
+								border-radius:0px;
+								border-bottom:3px solid black;
+								outline:0;
+								transition:all 350ms;
+								}
+								
+							#inp:focus{
+								font-size:20px;
+								border-bottom:6px solid #FF3E4F;
+								transition:all 350ms;
+								}
+								
+							#metin{
+								width:100%;
+								height:80%;
+								padding:10px;
+								outline:0;
+								border:none;
+								border-bottom:3px solid black;
+								border-radius:0px;
+								margin-top:10px;
+								font-family:arial;
+								transition:all 350ms;
+								}
+								
+							#metin:focus{
+								font-size:20px;
+								border-bottom:6px solid #FF3E4F;
+								transition:all 350ms;
+								}
+								
+							span{
+								display:block;
+								color:rgba(0,0,0,0.3);
+								font-size:13px;
+								padding:5px 0px 0px 0px;
+								}
+								
+							span #requ{
+								display:inline-block;
+								color:red;
+								padding-right:3px;
+								}
+								
+							#submit-button{
+								display:block;
+								width:100%;
+								padding:10px;
+								margin:10px 0px 0px 0px;
+								border-radius:0px;
+								color:white;
+								font-weight:bold;
+								border:none;
+								border-radius:10px;
+								outline:0;
+								background:#FF3E4F;
+								transition:all 350ms;
+								}
+								
+								
+							#submit-button:hover{
+								background:none;
+								color:#FF3E4F;
+								border:3px solid #FF3E4F;
+								transition:all 350ms;
+								}
+								
+							/*Form style end#*/
+						</style>
+						</head>
+						<body>
+							<!--wrapper start-->
+							<div class ="wrapper">
+								<!--form start-->
+							<form action ="" method ="">
+							<button id ="back-button">Geri git</button>
+							<input type ="text" id ="inp" placeholder ="Başlık">
+							<span><span id ="requ">*</span>Bu alana konu başlığınızı yazınız.</span>
+							<textarea id ="metin" placeholder ="Metin"></textarea>
+								<span><span id ="requ">*</span>Bu alana konu metninizi yazınız</span>
+								<button onclick ="cont()"type ="submit" id ="submit-button">Ekle</button>
+							</form>
+							<!--#form-->
+							</div>
+							<!--#wrapper-->
+							</body>
+							</html>
+			
